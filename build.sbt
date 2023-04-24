@@ -1,6 +1,6 @@
 ThisBuild / version := "0.1.0-SNAPSHOT"
 
-ThisBuild / scalaVersion := "2.13.10"
+ThisBuild / scalaVersion := "2.13.4"
 
 lazy val root = (project in file("."))
   .settings(
@@ -8,8 +8,8 @@ lazy val root = (project in file("."))
   )
 
 lazy val akkaHttpVersion = "10.2.8"
-lazy val akkaVersion = "10.2.8"
-lazy val circeVersion = "10.2.8"
+lazy val akkaVersion     = "2.6.9"
+lazy val circeVersion    = "0.14.1"
 
 libraryDependencies ++= Seq(
   "com.typesafe.akka" %% "akka-http"                  % akkaHttpVersion,
